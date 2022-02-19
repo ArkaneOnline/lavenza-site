@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: rgb(43, 44, 51);
+    height: 100vh;
+}
+
+a, h1, h2, h3, p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    margin-top: 20vh;
+    max-height: 256px;
+    box-shadow: 0px 0px 10px rgb(21, 22, 26);
+    border-radius: 50%;
+}
+
+.centerText {
+    padding-top: 1%;
+}
+
+.centerText h1, p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.centerText h1 {
+    padding-bottom: 10px;
+    font-size: xx-large;
+}
+
+.inviteButton {
+    padding-top: 20px;
+}
+
+.smallText {
+    font-size: 12px;
+    padding-top: 32px;
+}
+
+.teamSplitter {
+    font-size: xx-large;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.teamCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15%;
+    animation: fadeIn ease-out 2s;
+    -webkit-animation: fadeIn ease-out 2s;
+    -moz-animation: fadeIn ease-out 2s;
+    -o-animation: fadeIn ease-out 2s;
+    -ms-animation: fadeIn ease-out 2s;
+}
+
+.teamCard h2 {
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+
+.teamCard p {
+    padding-bottom: 20px;
+}
+
+.teamAvatar {
+    max-height: 200px;
+    max-width: auto;
+    box-shadow: 0px 0px 10px rgb(21, 22, 26);
+    border-radius: 50%;
+}
+
+.teamCardBackground {
+    background-color: rgb(21, 22, 26);
+    padding: 40px;
+    border-radius: 5%;
+    min-width: 400px;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgb(21, 22, 26);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}

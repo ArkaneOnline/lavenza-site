@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+    <%- include("partials/navbar"); -%>
+        <center>
+            <img class="logo" src="/assets/logo-circular.png">
+            <div class="centerText">
+                <h1>Lavenza</h1>
+                <p>The first ever, public Persona Compendium Bot!</p>
+            </div>
+            <div class="inviteButton">
+                <% if(locals.username) { %>
+                    <a class="button is-link is-rounded" href="https://discord.com/api/oauth2/authorize?client_id=639988194229878810&permissions=8&scope=bot%20applications.commands">Invite</a>
+                <% } else { %>
+                    <a class="button is-link is-rounded" href="/auth">Login to Invite</a>
+                <% } %>
+            </div>
+        <%- include("partials/footer"); -%>

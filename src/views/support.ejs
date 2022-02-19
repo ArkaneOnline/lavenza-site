@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+    <%- include("partials/navbar"); -%>
+        <center>
+            <img class="logo" src="/assets/logo-circular.png">
+            <div class="centerText">
+                <h1>Lavenza Support</h1>
+                <p>
+                    If you need help, we've got you covered! <br>
+                    Below are a few resources to help you get in contact with us!
+                </p>
+            </div>
+            <div class="inviteButton">
+                <% if(locals.username) { %>
+                    <a class="button is-link is-rounded" href="/discord">Support Discord</a>
+                    <a class="button is-link is-rounded" href="https://twitter.com/LavenzaStatus">Twitter DMs</a>
+                    <% } else { %>
+                        <a class="button is-link is-rounded" href="/auth">Login to View</a>
+                        <% } %>
+            </div>
+
+            <%- include("partials/footer"); -%>

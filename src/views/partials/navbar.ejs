@@ -1,0 +1,73 @@
+<nav class="navbar is-link" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="/assets/logo-circular.png" width=auto height=auto>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://docs.lavenza.tk/">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Links
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a href="/team" class="navbar-item">
+                        Team
+                    </a>
+                    <a href="/github" class="navbar-item">
+                        GitHub
+                    </a>
+                    <a href="/discord" class="navbar-item">
+                        Discord
+                    </a>
+                    <hr class="navbar-divider">
+                    <a href="/support" class="navbar-item">
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <% if(locals.username) { %>
+                        <div class="dropdown is-right is-hoverable">
+                            <div class="dropdown-trigger">
+                              <button class="button is-link" aria-haspopup="true" aria-controls="dropdown-menu3">
+                                <span><img style="border-radius: 50%; margin-top: 5px;" src="https://cdn.discordapp.com/avatars/<%- discordId -%>/<%- icon -%>.png"></span>
+                              </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                              <div class="dropdown-content">
+                                <a href="/profile" class="dropdown-item">
+                                  Profile
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="/auth/logout" class="dropdown-item">
+                                  Logout
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                    <% } else { %>
+                        <a class="button is-dark" href="/auth"><p><i class="fab fa-discord"></i> Log in with Discord</p></a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<script src="/scripts/navbar.js"></script>

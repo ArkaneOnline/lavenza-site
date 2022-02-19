@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+    <%- include("partials/navbar"); -%>
+    <center>
+        <img class="logo" src="https://cdn.discordapp.com/avatars/<%- discordId -%>/<%- icon -%>.png">
+        <div class="centerText">
+            <h1><%- username -%></h1>
+            <p>Here is your profile. There isn't much to do yet, but stay tuned for future updates to this page.</p> <br>
+            <br>
+            <p>
+                Below is the information that we collect from you authorizing your Discord Account. <br>
+                Username: <%- username -%> <br>
+                Discord ID: <%- discordId -%> <br>
+                Avatar Hash: <%- icon -%>
+            </p>
+        </div>
+        <br>
+        <a class="button is-link is-rounded" href="/auth/logout">Logout</a>
+
+<%- include("partials/footer"); -%>
