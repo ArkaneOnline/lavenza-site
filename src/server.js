@@ -4,7 +4,7 @@ require("dotenv").config();
 //packages
 const express = require("express");
 const server = express();
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 const passport = require("passport");
