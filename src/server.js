@@ -23,6 +23,7 @@ const githubRoute = require("./routes/github");
 const discordRoute = require("./routes/discord");
 const teamRoute = require("./routes/team");
 const supportRoute = require("./routes/support");
+const inviteRoute = require("./routes/invite");
 
 
 //session
@@ -53,6 +54,7 @@ server.use("/github", githubRoute);
 server.use("/discord", discordRoute);
 server.use("/team", teamRoute);
 server.use("/support", supportRoute);
+server.use("/invite", inviteRoute);
 
 server.get("/", (req, res) => {
     if(req.user){
